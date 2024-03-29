@@ -21,6 +21,10 @@ flags.forEach(flag => {
 
    flagContent = optimize(flagContent, {
       multipass: true,
+      js2svg: {
+         indent: 2,
+         pretty: true
+      },
       plugins: [
          "sortAttrs",
          "removeTitle",
