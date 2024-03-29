@@ -6,7 +6,7 @@ import sharp from 'sharp';
 
 const flags = globSync('../../src/*.svg');
 
-const sizes = [12, 16, 24, 32, 48]
+const sizes = [12, 16, 24, 32, 48, 64]
 
 await asyncForEach(Object.entries(flagTypes), async ([key, options]) => {
    console.log(key, options)

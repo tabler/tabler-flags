@@ -33,10 +33,10 @@ export const parseFlag = (svg, name, {
    gradientLinear = false,
    removeSize = false
 } = options, size = false) => {
-
+   
    if (radius || gradient) {
       svg = svg
-         .replace(/^(<svg[^>]+>)(.*)(<\/svg>)$/gm, (_, m1, m2, m3) => {
+         .replace(/^(<svg[^>]+>)(.*)(<\/svg>)$/gms, (_, m1, m2, m3) => {
             const id = `flag-${name}`
 
             return `${m1}
