@@ -3,7 +3,7 @@ import { join, basename } from 'path';
 import { readFileSync } from 'fs';
 
 const __dirname = new URL('.', import.meta.url).pathname;
-const flags = globSync(join(__dirname, '../src/*.svg')).sort()
+const flags = globSync(join(__dirname, '../flags/*.svg')).sort()
 
 flags.forEach(flag => {
    let flagContent = readFileSync(flag, 'utf8'),

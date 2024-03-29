@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "inputs": ["../../src/**", "build.mjs"],
+      "inputs": ["../../flags/**", "build.mjs"],
       "outputs": ["dist/**"]
     },
     "test": {

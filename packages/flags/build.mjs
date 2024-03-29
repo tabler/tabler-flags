@@ -3,7 +3,7 @@ import { basename } from 'path';
 import { readFileSync, mkdirSync, writeFileSync } from 'fs';
 import { parseFlag, flagTypes } from '../../.build/helpers.mjs';
 
-const flags = globSync('../../src/*.svg');
+const flags = globSync('../../flags/*.svg');
 
 Object.entries(flagTypes).forEach(([key, options]) => {
    mkdirSync(`./dist/${key}`, { recursive: true });

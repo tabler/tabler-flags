@@ -4,7 +4,7 @@ import { readFileSync, mkdirSync } from 'fs';
 import { parseFlag, flagTypes, asyncForEach } from '../../.build/helpers.mjs';
 import sharp from 'sharp';
 
-const flags = globSync('../../src/*.svg');
+const flags = globSync('../../flags/*.svg');
 
 const sizes = [12, 16, 24, 32, 48, 64]
 

@@ -78,7 +78,7 @@ flags.forEach(flag => {
       })
 
    // Write file if its different than the original
-   const writePath = join(__dirname, `../src/${name}.svg`)
+   const writePath = join(__dirname, `../flags/${name}.svg`)
    if (!existsSync(writePath) || flagContent !== readFileSync(writePath, 'utf8')) {
       console.log(`Writing ${name}.svg`)
       writeFileSync(writePath, flagContent)
@@ -98,10 +98,10 @@ writeFileSync(join(__dirname, '../flags.json'), JSON.stringify(flagsData, null, 
 // Remove old flags
 const newFlags = Object.keys(flagsData)
 
-globSync(join(__dirname, '../src/*.svg'))
+globSync(join(__dirname, '../flags/*.svg'))
    .map(file => basename(file, '.svg'))
    .filter(file => !newFlags.includes(file))
    .forEach(flag => {
       console.log(`Removing ${flag}.svg`)
-      unlinkSync(join(__dirname, `../src/${flag}.svg`))
+      unlinkSync(join(__dirname, `../flags/${flag}.svg`))
    })
