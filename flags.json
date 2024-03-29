@@ -1399,6 +1399,12 @@
     "name": "Rainbow",
     "category": "Other"
   },
-  "sealand": {},
-  "cabinda": {}
+  "sealand": {
+    "name": "Sealand",
+    "category": "Territories"
+  },
+  "cabinda": {
+    "name": "Cabinda",
+    "category": "Territories"
+  }
 }
