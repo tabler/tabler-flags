@@ -1,0 +1,28 @@
+{
+  "name": "flags",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "cd preview && npx @11ty/eleventy --watch --serve",
+    "preview": "cd preview && npx @11ty/eleventy",
+    "import-flags": "node .build/import-flags.mjs && pnpm run validate",
+    "validate": "node .build/validate.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "glob": "^10.3.10",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "rollup-plugin-license": "^3.3.1",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "svgo": "^3.2.0",
+    "svgson": "^5.3.1",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2",
+    "vitest": "^1.4.0",
+    "jest-serializer-html": "^7.1.0",
+    "@testing-library/jest-dom": "^6.4.2"
+  }
+}

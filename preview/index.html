@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabler Flags</title>
+
+    <style>
+      body {
+        background: #eeeeee;
+      }
+
+      .flags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .flag {
+        width: 32px;
+        aspect-ratio: 32/24;
+        background: no-repeat center/contain;
+        /* border-radius: 3px;
+         box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1); */
+      }
+    </style>
+  </head>
+  <body>
+      {% for category in countries %}
+      <h3>{{ category[0] }} ({{ category[1].size }})</h3>
+      <div class="flags">
+         {% for country in category[1] %}
+      <div title="{{ country[1].name }}">
+        <div
+          class="flag"
+          style="background-image: url(./flags/{{ country[0] }}.svg)"
+        ></div>
+      </div>
+      {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+
+    
+      {% for category in countries %}
+      <h3>{{ category[0] }}</h3>
+      <table>
+      {% for country in category[1] %}
+      <tr>
+        <td>{{ country[1].name }}</td>
+        <td>{{ country[1].iso }}</td>
+        <td>
+          <img
+            src="./icons/{{ country[0] }}.svg"
+            alt=""
+            width="30"
+            height="24"
+          />
+        </td>
+      </tr>
+      {% endfor %}
+      </table>
+      {% endfor %}
+  </body>
+</html>

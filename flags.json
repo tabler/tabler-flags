@@ -1,0 +1,1402 @@
+{
+  "afghanistan": {
+    "name": "Afghanistan",
+    "category": "Countries",
+    "iso": "AF"
+  },
+  "african-union": {
+    "name": "African Union",
+    "category": "Unions"
+  },
+  "aland-islands": {
+    "name": "Åland Islands",
+    "category": "Territories",
+    "iso": "AX"
+  },
+  "albania": {
+    "name": "Albania",
+    "category": "Countries",
+    "iso": "AL"
+  },
+  "algeria": {
+    "name": "Algeria",
+    "category": "Countries",
+    "iso": "DZ"
+  },
+  "american-samoa": {
+    "name": "American Samoa",
+    "category": "Territories",
+    "iso": "AS"
+  },
+  "andorra": {
+    "name": "Andorra",
+    "category": "Countries",
+    "iso": "AD"
+  },
+  "angola": {
+    "name": "Angola",
+    "category": "Countries",
+    "iso": "AO"
+  },
+  "anguilla": {
+    "name": "Anguilla",
+    "category": "Territories",
+    "iso": "AI"
+  },
+  "antarctica": {
+    "name": "Antarctica",
+    "category": "Territories",
+    "iso": "AQ"
+  },
+  "antigua-and-barbuda": {
+    "name": "Antigua and Barbuda",
+    "category": "Countries",
+    "iso": "AG"
+  },
+  "arab-league": {
+    "name": "Arab League",
+    "category": "Unions"
+  },
+  "argentina": {
+    "name": "Argentina",
+    "category": "Countries",
+    "iso": "AR"
+  },
+  "armenia": {
+    "name": "Armenia",
+    "category": "Countries",
+    "iso": "AM"
+  },
+  "aruba": {
+    "name": "Aruba",
+    "category": "Territories",
+    "iso": "AW"
+  },
+  "ascension-island": {
+    "name": "Ascension Island",
+    "category": "Territories",
+    "iso": "SH-AC"
+  },
+  "asean-union": {
+    "name": "ASEAN Union",
+    "category": "Unions",
+    "iso": "ASEAN"
+  },
+  "australia": {
+    "name": "Australia",
+    "category": "Countries",
+    "iso": "AU"
+  },
+  "austria": {
+    "name": "Austria",
+    "category": "Countries",
+    "iso": "AT"
+  },
+  "azerbaijan": {
+    "name": "Azerbaijan",
+    "category": "Countries",
+    "iso": "AZ"
+  },
+  "bahamas": {
+    "name": "Bahamas",
+    "category": "Countries",
+    "iso": "BS"
+  },
+  "bahrain": {
+    "name": "Bahrain",
+    "category": "Countries",
+    "iso": "BH"
+  },
+  "bangladesh": {
+    "name": "Bangladesh",
+    "category": "Countries",
+    "iso": "BD"
+  },
+  "barbados": {
+    "name": "Barbados",
+    "category": "Countries",
+    "iso": "BB"
+  },
+  "belarus": {
+    "name": "Belarus",
+    "category": "Countries",
+    "iso": "BY"
+  },
+  "belgium": {
+    "name": "Belgium",
+    "category": "Countries",
+    "iso": "BE"
+  },
+  "belize": {
+    "name": "Belize",
+    "category": "Countries",
+    "iso": "BZ"
+  },
+  "benin": {
+    "name": "Benin",
+    "category": "Countries",
+    "iso": "BJ"
+  },
+  "bermuda": {
+    "name": "Bermuda",
+    "category": "Territories",
+    "iso": "BM"
+  },
+  "bhutan": {
+    "name": "Bhutan",
+    "category": "Countries",
+    "iso": "BT"
+  },
+  "bolivia": {
+    "name": "Bolivia",
+    "category": "Countries",
+    "iso": "BO"
+  },
+  "bosnia-and-herzegovina": {
+    "name": "Bosnia and Herzegovina",
+    "category": "Countries",
+    "iso": "BA"
+  },
+  "botswana": {
+    "name": "Botswana",
+    "category": "Countries",
+    "iso": "BW"
+  },
+  "brazil": {
+    "name": "Brazil",
+    "category": "Countries",
+    "iso": "BR"
+  },
+  "british-virgin-islands": {
+    "name": "British Virgin Islands",
+    "category": "Territories",
+    "iso": "VG"
+  },
+  "brunei": {
+    "name": "Brunei",
+    "category": "Countries",
+    "iso": "BN"
+  },
+  "bulgaria": {
+    "name": "Bulgaria",
+    "category": "Countries",
+    "iso": "BG"
+  },
+  "burkina-faso": {
+    "name": "Burkina Faso",
+    "category": "Countries",
+    "iso": "BF"
+  },
+  "burundi": {
+    "name": "Burundi",
+    "category": "Countries",
+    "iso": "BI"
+  },
+  "cambodia": {
+    "name": "Cambodia",
+    "category": "Countries",
+    "iso": "KH"
+  },
+  "cameroon": {
+    "name": "Cameroon",
+    "category": "Countries",
+    "iso": "CM"
+  },
+  "canada": {
+    "name": "Canada",
+    "category": "Countries",
+    "iso": "CA"
+  },
+  "canary-islands": {
+    "name": "Canary Islands",
+    "category": "Territories",
+    "iso": "IC"
+  },
+  "cape-verde": {
+    "name": "Cape Verde",
+    "category": "Countries",
+    "iso": "CV"
+  },
+  "catalonia": {
+    "name": "Catalonia",
+    "category": "Territories",
+    "iso": "ES-CT"
+  },
+  "cayman-islands": {
+    "name": "Cayman Islands",
+    "category": "Territories",
+    "iso": "KY"
+  },
+  "central-african-republic": {
+    "name": "Central African Republic",
+    "category": "Countries",
+    "iso": "CF"
+  },
+  "chad": {
+    "name": "Chad",
+    "category": "Countries",
+    "iso": "TD"
+  },
+  "chequered": {
+    "name": "Chequered",
+    "category": "Other"
+  },
+  "chile": {
+    "name": "Chile",
+    "category": "Countries",
+    "iso": "CL"
+  },
+  "china": {
+    "name": "China",
+    "category": "Countries",
+    "iso": "CN"
+  },
+  "christmas-island": {
+    "name": "Christmas Island",
+    "category": "Territories",
+    "iso": "CX"
+  },
+  "cocos-keeling-islands": {
+    "name": "Cocos (Keeling) Islands",
+    "category": "Territories",
+    "iso": "CC"
+  },
+  "colombia": {
+    "name": "Colombia",
+    "category": "Countries",
+    "iso": "CO"
+  },
+  "commonwealth-of-independent-states": {
+    "name": "Commonwealth of Independent States",
+    "category": "Unions"
+  },
+  "commonwealth-of-nations": {
+    "name": "Commonwealth of Nations",
+    "category": "Unions"
+  },
+  "comoros": {
+    "name": "Comoros",
+    "category": "Countries",
+    "iso": "KM"
+  },
+  "cook-islands": {
+    "name": "Cook Islands",
+    "category": "Territories",
+    "iso": "CK"
+  },
+  "costa-rica": {
+    "name": "Costa Rica",
+    "category": "Countries",
+    "iso": "CR"
+  },
+  "croatia": {
+    "name": "Croatia",
+    "category": "Countries",
+    "iso": "HR"
+  },
+  "cuba": {
+    "name": "Cuba",
+    "category": "Countries",
+    "iso": "CU"
+  },
+  "curacao": {
+    "name": "Curaçao",
+    "category": "Territories",
+    "iso": "CW"
+  },
+  "cyprus": {
+    "name": "Cyprus",
+    "category": "Countries",
+    "iso": "CY"
+  },
+  "czechia": {
+    "name": "Czechia",
+    "category": "Countries",
+    "iso": "CZ"
+  },
+  "democratic-republic-congo": {
+    "name": "Democratic Republic of the Congo",
+    "category": "Countries",
+    "iso": "CD"
+  },
+  "denmark": {
+    "name": "Denmark",
+    "category": "Countries",
+    "iso": "DK"
+  },
+  "diego-garcia": {
+    "name": "Diego Garcia",
+    "category": "Territories",
+    "iso": "DG"
+  },
+  "djibouti": {
+    "name": "Djibouti",
+    "category": "Countries",
+    "iso": "DJ"
+  },
+  "dominica": {
+    "name": "Dominica",
+    "category": "Countries",
+    "iso": "DM"
+  },
+  "dominican-republic": {
+    "name": "Dominican Republic",
+    "category": "Countries",
+    "iso": "DO"
+  },
+  "east-timor": {
+    "name": "East Timor",
+    "category": "Countries",
+    "iso": "TL"
+  },
+  "ecuador": {
+    "name": "Ecuador",
+    "category": "Countries",
+    "iso": "EC"
+  },
+  "egypt": {
+    "name": "Egypt",
+    "category": "Countries",
+    "iso": "EG"
+  },
+  "el-salvador": {
+    "name": "El Salvador",
+    "category": "Countries",
+    "iso": "SV"
+  },
+  "england": {
+    "name": "England",
+    "category": "Territories",
+    "iso": "GB-ENG"
+  },
+  "equatorial-guinea": {
+    "name": "Equatorial Guinea",
+    "category": "Countries",
+    "iso": "GQ"
+  },
+  "eritrea": {
+    "name": "Eritrea",
+    "category": "Countries",
+    "iso": "ER"
+  },
+  "estonia": {
+    "name": "Estonia",
+    "category": "Countries",
+    "iso": "EE"
+  },
+  "eswatini": {
+    "name": "Eswatini",
+    "category": "Countries",
+    "iso": "SZ"
+  },
+  "ethiopia": {
+    "name": "Ethiopia",
+    "category": "Countries",
+    "iso": "ET"
+  },
+  "falkland-islands": {
+    "name": "Falkland Islands",
+    "category": "Territories",
+    "iso": "FK"
+  },
+  "faroe-islands": {
+    "name": "Faroe Islands",
+    "category": "Territories",
+    "iso": "FO"
+  },
+  "fiji": {
+    "name": "Fiji",
+    "category": "Countries",
+    "iso": "FJ"
+  },
+  "finland": {
+    "name": "Finland",
+    "category": "Countries",
+    "iso": "FI"
+  },
+  "france": {
+    "name": "France",
+    "category": "Countries",
+    "iso": "FR"
+  },
+  "french-guiana": {
+    "name": "French Guiana",
+    "category": "Territories",
+    "iso": "GF"
+  },
+  "french-polynesia": {
+    "name": "French Polynesia",
+    "category": "Territories",
+    "iso": "PF"
+  },
+  "french-southern-territories": {
+    "name": "French Southern Territories",
+    "category": "Territories",
+    "iso": "TF"
+  },
+  "gabon": {
+    "name": "Gabon",
+    "category": "Countries",
+    "iso": "GA"
+  },
+  "gambia": {
+    "name": "Gambia",
+    "category": "Countries",
+    "iso": "GM"
+  },
+  "georgia": {
+    "name": "Georgia",
+    "category": "Countries",
+    "iso": "GE"
+  },
+  "germany": {
+    "name": "Germany",
+    "category": "Countries",
+    "iso": "DE"
+  },
+  "ghana": {
+    "name": "Ghana",
+    "category": "Countries",
+    "iso": "GH"
+  },
+  "gibraltar": {
+    "name": "Gibraltar",
+    "category": "Territories",
+    "iso": "GI"
+  },
+  "greece": {
+    "name": "Greece",
+    "category": "Countries",
+    "iso": "GR"
+  },
+  "greenland": {
+    "name": "Greenland",
+    "category": "Territories",
+    "iso": "GL"
+  },
+  "grenada": {
+    "name": "Grenada",
+    "category": "Countries",
+    "iso": "GD"
+  },
+  "guadeloupe": {
+    "name": "Guadeloupe",
+    "category": "Territories",
+    "iso": "GP"
+  },
+  "guam": {
+    "name": "Guam",
+    "category": "Territories",
+    "iso": "GU"
+  },
+  "guatemala": {
+    "name": "Guatemala",
+    "category": "Countries",
+    "iso": "GT"
+  },
+  "guernsey": {
+    "name": "Guernsey",
+    "category": "Territories",
+    "iso": "GG"
+  },
+  "guinea": {
+    "name": "Guinea",
+    "category": "Countries",
+    "iso": "GN"
+  },
+  "guinea-bissau": {
+    "name": "Guinea-Bissau",
+    "category": "Countries",
+    "iso": "GW"
+  },
+  "guyana": {
+    "name": "Guyana",
+    "category": "Countries",
+    "iso": "GY"
+  },
+  "haiti": {
+    "name": "Haiti",
+    "category": "Countries",
+    "iso": "HT"
+  },
+  "heard-and-mcdonald-islands": {
+    "name": "Heard and McDonald Islands",
+    "category": "Territories",
+    "iso": "HM"
+  },
+  "honduras": {
+    "name": "Honduras",
+    "category": "Countries",
+    "iso": "HN"
+  },
+  "hong-kong": {
+    "name": "Hong Kong",
+    "category": "Territories",
+    "iso": "HK"
+  },
+  "hungary": {
+    "name": "Hungary",
+    "category": "Countries",
+    "iso": "HU"
+  },
+  "iceland": {
+    "name": "Iceland",
+    "category": "Countries",
+    "iso": "IS"
+  },
+  "india": {
+    "name": "India",
+    "category": "Countries",
+    "iso": "IN"
+  },
+  "indonesia": {
+    "name": "Indonesia",
+    "category": "Countries",
+    "iso": "ID"
+  },
+  "iran": {
+    "name": "Iran",
+    "category": "Countries",
+    "iso": "IR"
+  },
+  "iraq": {
+    "name": "Iraq",
+    "category": "Countries",
+    "iso": "IQ"
+  },
+  "ireland": {
+    "name": "Ireland",
+    "category": "Countries",
+    "iso": "IE"
+  },
+  "isle-of-man": {
+    "name": "Isle of Man",
+    "category": "Territories",
+    "iso": "IM"
+  },
+  "israel": {
+    "name": "Israel",
+    "category": "Countries",
+    "iso": "IL"
+  },
+  "italy": {
+    "name": "Italy",
+    "category": "Countries",
+    "iso": "IT"
+  },
+  "ivory-coast": {
+    "name": "Ivory Coast",
+    "category": "Countries",
+    "iso": "CI"
+  },
+  "jamaica": {
+    "name": "Jamaica",
+    "category": "Countries",
+    "iso": "JM"
+  },
+  "japan": {
+    "name": "Japan",
+    "category": "Countries",
+    "iso": "JP"
+  },
+  "jersey": {
+    "name": "Jersey",
+    "category": "Territories",
+    "iso": "JE"
+  },
+  "jordan": {
+    "name": "Jordan",
+    "category": "Countries",
+    "iso": "JO"
+  },
+  "kazakhstan": {
+    "name": "Kazakhstan",
+    "category": "Countries",
+    "iso": "KZ"
+  },
+  "kenya": {
+    "name": "Kenya",
+    "category": "Countries",
+    "iso": "KE"
+  },
+  "kiribati": {
+    "name": "Kiribati",
+    "category": "Countries",
+    "iso": "KI"
+  },
+  "kosovo": {
+    "name": "Kosovo",
+    "category": "Countries",
+    "iso": "XK"
+  },
+  "kuwait": {
+    "name": "Kuwait",
+    "category": "Countries",
+    "iso": "KW"
+  },
+  "kyrgyzstan": {
+    "name": "Kyrgyzstan",
+    "category": "Countries",
+    "iso": "KG"
+  },
+  "laos": {
+    "name": "Laos",
+    "category": "Countries",
+    "iso": "LA"
+  },
+  "latvia": {
+    "name": "Latvia",
+    "category": "Countries",
+    "iso": "LV"
+  },
+  "lebanon": {
+    "name": "Lebanon",
+    "category": "Countries",
+    "iso": "LB"
+  },
+  "lesotho": {
+    "name": "Lesotho",
+    "category": "Countries",
+    "iso": "LS"
+  },
+  "liberia": {
+    "name": "Liberia",
+    "category": "Countries",
+    "iso": "LR"
+  },
+  "libya": {
+    "name": "Libya",
+    "category": "Countries",
+    "iso": "LY"
+  },
+  "liechtenstein": {
+    "name": "Liechtenstein",
+    "category": "Countries",
+    "iso": "LI"
+  },
+  "lithuania": {
+    "name": "Lithuania",
+    "category": "Countries",
+    "iso": "LT"
+  },
+  "luxembourg": {
+    "name": "Luxembourg",
+    "category": "Countries",
+    "iso": "LU"
+  },
+  "macau": {
+    "name": "Macau",
+    "category": "Territories",
+    "iso": "MO"
+  },
+  "madagascar": {
+    "name": "Madagascar",
+    "category": "Countries",
+    "iso": "MG"
+  },
+  "malawi": {
+    "name": "Malawi",
+    "category": "Countries",
+    "iso": "MW"
+  },
+  "malaysia": {
+    "name": "Malaysia",
+    "category": "Countries",
+    "iso": "MY"
+  },
+  "maldives": {
+    "name": "Maldives",
+    "category": "Countries",
+    "iso": "MV"
+  },
+  "mali": {
+    "name": "Mali",
+    "category": "Countries",
+    "iso": "ML"
+  },
+  "malta": {
+    "name": "Malta",
+    "category": "Countries",
+    "iso": "MT"
+  },
+  "marshall-islands": {
+    "name": "Marshall Islands",
+    "category": "Countries",
+    "iso": "MH"
+  },
+  "martinique": {
+    "name": "Martinique",
+    "category": "Territories",
+    "iso": "MQ"
+  },
+  "mauritania": {
+    "name": "Mauritania",
+    "category": "Countries",
+    "iso": "MR"
+  },
+  "mauritius": {
+    "name": "Mauritius",
+    "category": "Countries",
+    "iso": "MU"
+  },
+  "mayotte": {
+    "name": "Mayotte",
+    "category": "Territories",
+    "iso": "YT"
+  },
+  "mexico": {
+    "name": "Mexico",
+    "category": "Countries",
+    "iso": "MX"
+  },
+  "micronesia": {
+    "name": "Micronesia",
+    "category": "Countries",
+    "iso": "FM"
+  },
+  "moldova": {
+    "name": "Moldova",
+    "category": "Countries",
+    "iso": "MD"
+  },
+  "monaco": {
+    "name": "Monaco",
+    "category": "Countries",
+    "iso": "MC"
+  },
+  "mongolia": {
+    "name": "Mongolia",
+    "category": "Countries",
+    "iso": "MN"
+  },
+  "montenegro": {
+    "name": "Montenegro",
+    "category": "Countries",
+    "iso": "ME"
+  },
+  "montserrat": {
+    "name": "Montserrat",
+    "category": "Territories",
+    "iso": "MS"
+  },
+  "morocco": {
+    "name": "Morocco",
+    "category": "Countries",
+    "iso": "MA"
+  },
+  "mozambique": {
+    "name": "Mozambique",
+    "category": "Countries",
+    "iso": "MZ"
+  },
+  "myanmar": {
+    "name": "Myanmar",
+    "category": "Countries",
+    "iso": "MM"
+  },
+  "namibia": {
+    "name": "Namibia",
+    "category": "Countries",
+    "iso": "NA"
+  },
+  "nato": {
+    "name": "NATO",
+    "category": "Unions",
+    "iso": "NATO"
+  },
+  "nauru": {
+    "name": "Nauru",
+    "category": "Countries",
+    "iso": "NR"
+  },
+  "nepal": {
+    "name": "Nepal",
+    "category": "Countries",
+    "iso": "NP"
+  },
+  "netherlands": {
+    "name": "Netherlands",
+    "category": "Countries",
+    "iso": "NL"
+  },
+  "new-caledonia": {
+    "name": "New Caledonia",
+    "category": "Territories",
+    "iso": "NC"
+  },
+  "new-zealand": {
+    "name": "New Zealand",
+    "category": "Countries",
+    "iso": "NZ"
+  },
+  "nicaragua": {
+    "name": "Nicaragua",
+    "category": "Countries",
+    "iso": "NI"
+  },
+  "niger": {
+    "name": "Niger",
+    "category": "Countries",
+    "iso": "NE"
+  },
+  "nigeria": {
+    "name": "Nigeria",
+    "category": "Countries",
+    "iso": "NG"
+  },
+  "niue": {
+    "name": "Niue",
+    "category": "Territories",
+    "iso": "NU"
+  },
+  "norfolk-island": {
+    "name": "Norfolk Island",
+    "category": "Territories",
+    "iso": "NF"
+  },
+  "north-korea": {
+    "name": "North Korea",
+    "category": "Countries",
+    "iso": "KP"
+  },
+  "north-macedonia": {
+    "name": "North Macedonia",
+    "category": "Countries",
+    "iso": "MK"
+  },
+  "northern-mariana-islands": {
+    "name": "Northern Mariana Islands",
+    "category": "Territories",
+    "iso": "MP"
+  },
+  "norway": {
+    "name": "Norway",
+    "category": "Countries",
+    "iso": "NO"
+  },
+  "oman": {
+    "name": "Oman",
+    "category": "Countries",
+    "iso": "OM"
+  },
+  "pakistan": {
+    "name": "Pakistan",
+    "category": "Countries",
+    "iso": "PK"
+  },
+  "palau": {
+    "name": "Palau",
+    "category": "Countries",
+    "iso": "PW"
+  },
+  "palestine": {
+    "name": "State of Palestine",
+    "category": "Countries",
+    "iso": "PS"
+  },
+  "panama": {
+    "name": "Panama",
+    "category": "Countries",
+    "iso": "PA"
+  },
+  "peru": {
+    "name": "Peru",
+    "category": "Countries",
+    "iso": "PE"
+  },
+  "philippines": {
+    "name": "Philippines",
+    "category": "Countries",
+    "iso": "PH"
+  },
+  "poland": {
+    "name": "Poland",
+    "category": "Countries",
+    "iso": "PL"
+  },
+  "portugal": {
+    "name": "Portugal",
+    "category": "Countries",
+    "iso": "PT"
+  },
+  "qatar": {
+    "name": "Qatar",
+    "category": "Countries",
+    "iso": "QA"
+  },
+  "romania": {
+    "name": "Romania",
+    "category": "Countries",
+    "iso": "RO"
+  },
+  "russia": {
+    "name": "Russia",
+    "category": "Countries",
+    "iso": "RU"
+  },
+  "rwanda": {
+    "name": "Rwanda",
+    "category": "Countries",
+    "iso": "RW"
+  },
+  "saudi-arabia": {
+    "name": "Saudi Arabia",
+    "category": "Countries",
+    "iso": "SA"
+  },
+  "senegal": {
+    "name": "Senegal",
+    "category": "Countries",
+    "iso": "SN"
+  },
+  "serbia": {
+    "name": "Serbia",
+    "category": "Countries",
+    "iso": "RS"
+  },
+  "singapore": {
+    "name": "Singapore",
+    "category": "Countries",
+    "iso": "SG"
+  },
+  "slovakia": {
+    "name": "Slovakia",
+    "category": "Countries",
+    "iso": "SK"
+  },
+  "slovenia": {
+    "name": "Slovenia",
+    "category": "Countries",
+    "iso": "SI"
+  },
+  "south-africa": {
+    "name": "South Africa",
+    "category": "Countries",
+    "iso": "ZA"
+  },
+  "south-korea": {
+    "name": "South Korea",
+    "category": "Countries",
+    "iso": "KR"
+  },
+  "spain": {
+    "name": "Spain",
+    "category": "Countries",
+    "iso": "ES"
+  },
+  "sri-lanka": {
+    "name": "Sri Lanka",
+    "category": "Countries",
+    "iso": "LK"
+  },
+  "sweden": {
+    "name": "Sweden",
+    "category": "Countries",
+    "iso": "SE"
+  },
+  "switzerland": {
+    "name": "Switzerland",
+    "category": "Countries",
+    "iso": "CH"
+  },
+  "syria": {
+    "name": "Syria",
+    "category": "Countries",
+    "iso": "SY"
+  },
+  "taiwan": {
+    "name": "Taiwan",
+    "category": "Territories",
+    "iso": "TW"
+  },
+  "thailand": {
+    "name": "Thailand",
+    "category": "Countries",
+    "iso": "TH"
+  },
+  "turkey": {
+    "name": "Turkey",
+    "category": "Countries",
+    "iso": "TR"
+  },
+  "ukraine": {
+    "name": "Ukraine",
+    "category": "Countries",
+    "iso": "UA"
+  },
+  "united-arab-emirates": {
+    "name": "United Arab Emirates",
+    "category": "Countries",
+    "iso": "AE"
+  },
+  "united-kingdom": {
+    "name": "United Kingdom",
+    "category": "Countries",
+    "iso": "GB"
+  },
+  "united-states": {
+    "name": "United States",
+    "category": "Countries",
+    "iso": "US"
+  },
+  "uruguay": {
+    "name": "Uruguay",
+    "category": "Countries",
+    "iso": "UY"
+  },
+  "vietnam": {
+    "name": "Vietnam",
+    "category": "Countries",
+    "iso": "VN"
+  },
+  "zimbabwe": {
+    "name": "Zimbabwe",
+    "category": "Countries",
+    "iso": "ZW"
+  },
+  "zambia": {
+    "name": "Zambia",
+    "category": "Countries",
+    "iso": "ZM"
+  },
+  "yemen": {
+    "name": "Yemen",
+    "category": "Countries",
+    "iso": "YE"
+  },
+  "western-sahara": {
+    "name": "Western Sahara",
+    "category": "Territories",
+    "iso": "EH"
+  },
+  "wallis-and-futuna": {
+    "name": "Wallis and Futuna",
+    "category": "Territories",
+    "iso": "WF"
+  },
+  "wales": {
+    "name": "Wales",
+    "category": "Territories",
+    "iso": "GB-WLS"
+  },
+  "virgin-islands": {
+    "name": "Virgin Islands",
+    "category": "Territories",
+    "iso": "VI"
+  },
+  "venezuela": {
+    "name": "Venezuela",
+    "category": "Countries",
+    "iso": "VE"
+  },
+  "vatican": {
+    "name": "Vatican",
+    "category": "Countries",
+    "iso": "VA"
+  },
+  "vanuatu": {
+    "name": "Vanuatu",
+    "category": "Countries",
+    "iso": "VU"
+  },
+  "uzbekistan": {
+    "name": "Uzbekistan",
+    "category": "Countries",
+    "iso": "UZ"
+  },
+  "un": {
+    "name": "United Nations",
+    "category": "Unions",
+    "iso": "UN"
+  },
+  "uganda": {
+    "name": "Uganda",
+    "category": "Countries",
+    "iso": "UG"
+  },
+  "tuvalu": {
+    "name": "Tuvalu",
+    "category": "Countries",
+    "iso": "TV"
+  },
+  "turks-and-caicos-islands": {
+    "name": "Turks and Caicos Islands",
+    "category": "Territories",
+    "iso": "TC"
+  },
+  "turkmenistan": {
+    "name": "Turkmenistan",
+    "category": "Countries",
+    "iso": "TM"
+  },
+  "turkic-states": {
+    "name": "Turkic States",
+    "category": "Unions"
+  },
+  "tunisia": {
+    "name": "Tunisia",
+    "category": "Countries",
+    "iso": "TN"
+  },
+  "tristan-da-cunha": {
+    "name": "Tristan da Cunha",
+    "category": "Territories",
+    "iso": "SH-TA"
+  },
+  "trinidad-tobago": {
+    "name": "Trinidad and Tobago",
+    "category": "Countries",
+    "iso": "TT"
+  },
+  "tonga": {
+    "name": "Tonga",
+    "category": "Countries",
+    "iso": "TO"
+  },
+  "tokelau": {
+    "name": "Tokelau",
+    "category": "Territories",
+    "iso": "TK"
+  },
+  "togo": {
+    "name": "Togo",
+    "category": "Countries",
+    "iso": "TG"
+  },
+  "tanzania": {
+    "name": "Tanzania",
+    "category": "Countries",
+    "iso": "TZ"
+  },
+  "tajikistan": {
+    "name": "Tajikistan",
+    "category": "Countries",
+    "iso": "TJ"
+  },
+  "suriname": {
+    "name": "Suriname",
+    "category": "Countries",
+    "iso": "SR"
+  },
+  "sudan": {
+    "name": "Sudan",
+    "category": "Countries",
+    "iso": "SD"
+  },
+  "south-sudan": {
+    "name": "South Sudan",
+    "category": "Countries",
+    "iso": "SS"
+  },
+  "south-georgia-and-south-sandwich-islands": {
+    "name": "South Georgia and the South Sandwich Islands",
+    "category": "Territories",
+    "iso": "GS"
+  },
+  "south-american-union": {
+    "name": "South American Union",
+    "category": "Unions"
+  },
+  "somalia": {
+    "name": "Somalia",
+    "category": "Countries",
+    "iso": "SO"
+  },
+  "solomon-islands": {
+    "name": "Solomon Islands",
+    "category": "Territories",
+    "iso": "SB"
+  },
+  "sint-maarten": {
+    "name": "Sint Maarten",
+    "category": "Territories",
+    "iso": "SX"
+  },
+  "sint-eustatius": {
+    "name": "Sint Eustatius",
+    "category": "Territories",
+    "iso": "BQ3"
+  },
+  "sierra-leone": {
+    "name": "Sierra Leone",
+    "category": "Countries",
+    "iso": "SL"
+  },
+  "seychelles": {
+    "name": "Seychelles",
+    "category": "Countries",
+    "iso": "SC"
+  },
+  "scotland": {
+    "name": "Scotland",
+    "category": "Territories",
+    "iso": "GB-SCT"
+  },
+  "sao-tome-and-principe": {
+    "name": "São Tomé and Príncipe",
+    "category": "Countries",
+    "iso": "ST"
+  },
+  "san-marino": {
+    "name": "San Marino",
+    "category": "Countries",
+    "iso": "SM"
+  },
+  "samoa": {
+    "name": "Samoa",
+    "category": "Countries",
+    "iso": "WS"
+  },
+  "saint-vincent-and-grenadines": {
+    "name": "Saint Vincent and the Grenadines",
+    "category": "Countries",
+    "iso": "VC"
+  },
+  "saint-pierre-and-miquelon": {
+    "name": "Saint Pierre and Miquelon",
+    "category": "Territories",
+    "iso": "PM"
+  },
+  "saint-lucia": {
+    "name": "Saint Lucia",
+    "category": "Countries",
+    "iso": "LC"
+  },
+  "saint-kitts-and-nevis": {
+    "name": "Saint Kitts and Nevis",
+    "category": "Countries",
+    "iso": "KN"
+  },
+  "saint-helena": {
+    "name": "Saint Helena",
+    "category": "Territories",
+    "iso": "SH-HL"
+  },
+  "saint-barthelemy": {
+    "name": "Saint Barthélemy",
+    "category": "Territories",
+    "iso": "BL"
+  },
+  "saba": {
+    "name": "Saba",
+    "category": "Territories",
+    "iso": "BQ2"
+  },
+  "reunion": {
+    "name": "Réunion",
+    "category": "Territories",
+    "iso": "RE"
+  },
+  "republic-congo": {
+    "name": "Republic of the Congo",
+    "category": "Countries",
+    "iso": "CG"
+  },
+  "puerto-rico": {
+    "name": "Puerto Rico",
+    "category": "Territories",
+    "iso": "PR"
+  },
+  "pitcairn-islands": {
+    "name": "Pitcairn Islands",
+    "category": "Territories",
+    "iso": "PN"
+  },
+  "paraguay": {
+    "name": "Paraguay",
+    "category": "Countries",
+    "iso": "PY"
+  },
+  "papua-new-guinea": {
+    "name": "Papua New Guinea",
+    "category": "Countries",
+    "iso": "PG"
+  },
+  "paneuropean-union": {
+    "name": "Pan-European Union",
+    "category": "Unions"
+  },
+  "pirate": {
+    "name": "Pirate",
+    "category": "Other"
+  },
+  "transnistria": {
+    "name": "Transnistria",
+    "category": "Territories"
+  },
+  "south-ossetia": {
+    "name": "South Ossetia",
+    "category": "Territories"
+  },
+  "northern-cyprus": {
+    "name": "Northern Cyprus",
+    "category": "Territories"
+  },
+  "abkhazia": {
+    "name": "Abkhazia",
+    "category": "Territories"
+  },
+  "paraolympic": {
+    "name": "Paraolympic",
+    "category": "Other"
+  },
+  "olympic": {
+    "name": "Olympic",
+    "category": "Other"
+  },
+  "diver-down": {
+    "name": "Diver Down",
+    "category": "Other"
+  },
+  "somaliland": {
+    "name": "Somaliland",
+    "category": "Territories"
+  },
+  "semaphore-signal": {
+    "name": "Semaphore Signal",
+    "category": "Other"
+  },
+  "maltese-cross": {
+    "name": "Maltese Cross",
+    "category": "Other"
+  },
+  "cefta": {
+    "name": "Central European Free Trade Agreement",
+    "category": "Unions"
+  },
+  "pacific-community": {
+    "name": "Pacific Community",
+    "category": "Unions",
+    "iso": "PC"
+  },
+  "bonaire": {
+    "name": "Bonaire",
+    "category": "Territories",
+    "iso": "BQ1"
+  },
+  "european-union": {
+    "name": "European Union",
+    "category": "Unions",
+    "iso": "EU"
+  },
+  "tatarstan": {
+    "name": "Tatarstan",
+    "category": "Territories"
+  },
+  "jubaland": {
+    "name": "Jubaland",
+    "category": "Territories"
+  },
+  "tibet": {
+    "name": "Tibet",
+    "category": "Territories"
+  },
+  "chechnya": {
+    "name": "Chechnya",
+    "category": "Territories"
+  },
+  "rainbow": {
+    "name": "Rainbow",
+    "category": "Other"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "@tabler/flags-vue",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./dist/cjs/index.cjs",
+  "types": "./dist/cjs/index.d.cts",
+  "module": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      },
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy && node ./build.mjs && pnpm run build:tsup",
+    "build:tsup": "concurrently \"npm run build:cjs\" \"npm run build:esm\"",
+    "build:cjs": "tsup --format cjs --external vue",
+    "build:esm": "tsup --format esm --external vue",
+    "copy": "pnpm run copy:license",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "find . ! -name '.gitkeep' -path './dist/*' -exec rm -rf {} + && rm -rf ./src/flags/*",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "vue": ">=3.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/vue": "^8.0.3",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vue": "^3.4.21"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@tabler/flags-png",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy && node ./build.mjs",
+    "copy": "pnpm run copy:license",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "find . ! -name '.gitkeep' -path './dist/*' -exec rm -rf {} +"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.2"
+  }
+}
