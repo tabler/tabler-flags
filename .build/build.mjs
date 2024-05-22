@@ -66,7 +66,7 @@ export const buildFramework = (packageName, {
 
       flagContent = flagContent.replace(/\n\s*/g, '')
 
-      writeFileSync(join(__dirname, `../packages/${packageName}/flags/flags/flag-${name}.${extension}`), componentTemplate({
+      writeFileSync(join(__dirname, `../packages/${packageName}/src/flags/flag-${name}.${extension}`), componentTemplate({
          name,
          namePascal: toPascalCase(name),
          iso: flagData.iso,
@@ -85,5 +85,5 @@ export const buildFramework = (packageName, {
       console.log(name);
    })
 
-   writeFileSync(join(__dirname, `../packages/${packageName}/flags/flags/index.ts`), index.join('\n'), 'utf8')
+   writeFileSync(join(__dirname, `../packages/${packageName}/src/flags/index.ts`), index.join('\n'), 'utf8')
 }
