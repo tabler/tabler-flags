@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "build": "pnpm run clean && pnpm run copy && node ./build.mjs",
-    "copy": "pnpm run copy:license",
+    "copy": "pnpm run copy:license && pnpm run copy:list",
     "copy:license": "cp ../../LICENSE ./LICENSE",
+    "copy:list": "cp ../../flags.json ./dist/flags.json",
     "clean": "find . ! -name '.gitkeep' -path './dist/*' -exec rm -rf {} +"
   },
   "files": [
