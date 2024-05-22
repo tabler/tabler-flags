@@ -33,6 +33,8 @@ jobs:
         run: pnpm install
       - name: create and publish versions
         uses: changesets/action@v1
+        permissions:
+          contents: write
         with:
           commit: "chore: update versions"
           title: "chore: update versions"
