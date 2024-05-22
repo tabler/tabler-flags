@@ -1,6 +1,6 @@
 {
   "name": "@tabler/flags",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "build": "pnpm run clean && pnpm run copy && node ./build.mjs",
     "copy": "pnpm run copy:license && pnpm run copy:list",
