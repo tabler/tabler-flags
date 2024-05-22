@@ -7,7 +7,8 @@
     "dev": "cd preview && npx @11ty/eleventy --watch --serve",
     "preview": "cd preview && npx @11ty/eleventy",
     "import-flags": "node .build/import-flags.mjs && pnpm run validate",
-    "validate": "node .build/validate.mjs"
+    "validate": "node .build/validate.mjs",
+    "ci:publish": "pnpm publish -r"
   },
   "author": "",
   "license": "ISC",
