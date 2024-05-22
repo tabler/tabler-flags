@@ -1,6 +1,6 @@
 {
   "name": "@tabler/flags-png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "pnpm run clean && pnpm run copy && node ./build.mjs",
     "copy": "pnpm run copy:license",
