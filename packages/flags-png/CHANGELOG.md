@@ -1,5 +1,11 @@
 # @tabler/flags-png
 
+## 0.0.3
+
+### Patch Changes
+
+- 78bb2f5: test
+
 ## 0.0.2
 
 ### Patch Changes
