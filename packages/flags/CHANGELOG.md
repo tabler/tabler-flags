@@ -1,5 +1,11 @@
 # @tabler/flags
 
+## 0.0.4
+
+### Patch Changes
+
+- 78bb2f5: test
+
 ## 0.0.3
 
 ### Patch Changes
