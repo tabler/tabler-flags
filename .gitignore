@@ -6,3 +6,5 @@ import
 packages/*/src/flags/*
 packages/*/dist
 .vscode
+.npmrc
+.pnpm-store
