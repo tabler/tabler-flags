@@ -1406,5 +1406,34 @@
   "cabinda": {
     "name": "Cabinda",
     "category": "Territories"
+  },
+  "basque-country": {
+    "name": "Basque Country",
+    "category": "Territories",
+    "iso": "ES-PV"
+  },
+  "galicia": {
+    "name": "Galicia",
+    "category": "Territories",
+    "iso": "ES-GA"
+  },
+  "northern-ireland": {
+    "name": "Northern Ireland",
+    "category": "Territories",
+    "iso": "GB-NIR"
+  },
+  "british-indian-ocean-territory": {
+    "name": "British Indian Ocean Territory",
+    "category": "Territories",
+    "iso": "IO"
+  },
+  "east-african-community": {
+    "name": "East African Community",
+    "category": "Unions",
+    "iso": "EAC"
+  },
+  "unknown": {
+    "name": "Unknown",
+    "category": "Other"
   }
 }

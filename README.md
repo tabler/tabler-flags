@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A set of <!--flags-count-->287<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
+A set of <!--flags-count-->293<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
 </p>
 
 <p align="center">
@@ -290,6 +290,7 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Central European Free Trade Agreement | `cefta` |  | `FlagCefta` |
 | Pacific Community | `pacific-community` | `PC` | `FlagPacificCommunity`, `FlagPC` |
 | European Union | `european-union` | `EU` | `FlagEuropeanUnion`, `FlagEU` |
+| East African Community | `east-african-community` | `EAC` | `FlagEastAfricanCommunity`, `FlagEAC` |
 
 ### Territories
 
@@ -366,6 +367,10 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Chechnya | `chechnya` |  | `FlagChechnya` |
 | Sealand | `sealand` |  | `FlagSealand` |
 | Cabinda | `cabinda` |  | `FlagCabinda` |
+| Basque Country | `basque-country` | `ES-PV` | `FlagBasqueCountry`, `FlagESPV` |
+| Galicia | `galicia` | `ES-GA` | `FlagGalicia`, `FlagESGA` |
+| Northern Ireland | `northern-ireland` | `GB-NIR` | `FlagNorthernIreland`, `FlagGBNIR` |
+| British Indian Ocean Territory | `british-indian-ocean-territory` | `IO` | `FlagBritishIndianOceanTerritory`, `FlagIO` |
 
 ### Other
 
@@ -379,6 +384,7 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Semaphore Signal | `semaphore-signal` |  | `FlagSemaphoreSignal` |
 | Maltese Cross | `maltese-cross` |  | `FlagMalteseCross` |
 | Rainbow | `rainbow` |  | `FlagRainbow` |
+| Unknown | `unknown` |  | `FlagUnknown` |
 <!--/flags-table-->
 
 ## 📝 License
