@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  NODE_VERSION: '24'
+
+jobs:
+  ci:
+    name: ${{ matrix.package }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - flags
+          - flags-png
+          - flags-react
+          - flags-vue
+          - flags-preact
+          - flags-astro
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Restore turbo cache
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-${{ matrix.package }}-${{ github.sha }}
+          restore-keys: |
+            turbo-${{ matrix.package }}-
+
+      - name: Build
+        run: pnpm exec turbo run build --filter=@tabler/${{ matrix.package }}
+
+      - name: Typecheck
+        run: pnpm exec turbo run typecheck --filter=@tabler/${{ matrix.package }}
+
+      - name: Test
+        run: pnpm exec turbo run test --filter=@tabler/${{ matrix.package }}

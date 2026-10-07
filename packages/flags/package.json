@@ -1,14 +1,38 @@
 {
   "name": "@tabler/flags",
   "version": "0.0.4",
-  "scripts": {
-    "build": "pnpm run clean && pnpm run copy && node ./build.mjs",
-    "copy": "pnpm run copy:license && pnpm run copy:list",
-    "copy:license": "cp ../../LICENSE ./LICENSE",
-    "copy:list": "cp ../../flags.json ./dist/flags.json",
-    "clean": "find . ! -name '.gitkeep' -path './dist/*' -exec rm -rf {} +"
+  "license": "MIT",
+  "description": "Country flags as SVG files in four variants (rounded, plain, gradient, shiny).",
+  "homepage": "https://github.com/tabler/tabler-flags",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-flags/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabler/tabler-flags.git",
+    "directory": "packages/flags"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
   "files": [
-    "dist/*"
-  ]
+    "dist"
+  ],
+  "exports": {
+    "./flags.json": "./dist/flags.json",
+    "./*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "flags",
+    "country",
+    "svg",
+    "icons"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy:license && node build.mjs",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "rm -rf dist"
+  }
 }

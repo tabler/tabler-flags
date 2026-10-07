@@ -1,0 +1,6 @@
+dist
+stats
+LICENSE
+src/flags/*
+!src/flags/.gitkeep
+src/flags-list.ts

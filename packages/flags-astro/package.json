@@ -1,0 +1,58 @@
+{
+  "name": "@tabler/flags-astro",
+  "version": "0.0.3",
+  "license": "MIT",
+  "description": "Country flags as Astro components.",
+  "homepage": "https://github.com/tabler/tabler-flags",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-flags/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabler/tabler-flags.git",
+    "directory": "packages/flags-astro"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/cjs/tabler-flags-astro.cjs",
+  "module": "./dist/esm/tabler-flags-astro.mjs",
+  "types": "./dist/tabler-flags-astro.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tabler-flags-astro.d.ts",
+      "import": "./dist/esm/tabler-flags-astro.mjs",
+      "require": "./dist/cjs/tabler-flags-astro.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "amdName": "TablerFlagsAstro",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "flags",
+    "country",
+    "svg",
+    "astro",
+    "icons"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy:license && pnpm run build:flags && pnpm run typecheck && pnpm run build:bundles",
+    "build:flags": "node build.mjs",
+    "build:bundles": "rollup -c ./rollup.config.mjs",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "rm -rf dist && find . ! -name '.gitkeep' -path '*/src/flags/*' -exec rm -rf {} +",
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "astro": ">=5.0.0 <8.0.0"
+  },
+  "devDependencies": {
+    "astro": "^7.3.6",
+    "vitest": "^5.0.3"
+  }
+}

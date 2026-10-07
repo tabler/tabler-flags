@@ -1,23 +1,34 @@
-import { buildFramework } from '../../.build/build.mjs';
+#!/usr/bin/env node
 
-const componentTemplate = ({ name, svgObject }) => {
-   return `\
-import createVueComponent from '../createVueComponent';
-export default createVueComponent('${name}', ${JSON.stringify(svgObject)});`;
-}
+import { buildJsFlags, buildFlagsList, buildFlagsMap } from '../../.build/build-flags.mjs';
+import { variants } from '../../.build/helpers.mjs';
 
-const indexTemplate = ({
-   iso,
-   isoPascal,
-   name,
-   namePascal
-}) => {
-   console.log(iso, isoPascal, name, namePascal)
-   return `export { default as Flag${namePascal}${isoPascal ? `, default as Flag${isoPascal}` : ''} } from './flag-${name}'`;
-}
+const componentTemplate = ({ slug, namePascal, variants: nodes }) => {
+  const consts = variants.map((v) => `const __${v}: FlagNode = ${JSON.stringify(nodes[v].nodes)};`).join('\n');
+  const map = variants.map((v) => `${v}: __${v}`).join(', ');
 
-buildFramework('flags-vue', {
-   componentTemplate,
-   indexTemplate,
-   key: true,
-})
+  return `\
+import createFlagVueComponent from '../createFlagVueComponent';
+import type { FlagNode } from '../types';
+
+${consts}
+
+const Flag${namePascal} = createFlagVueComponent('${slug}', '${namePascal}', { ${map} });
+
+export default Flag${namePascal};`;
+};
+
+const indexItemTemplate = ({ namePascal, isoPascal }) =>
+  `export { default as Flag${namePascal}${isoPascal ? `, default as Flag${isoPascal}` : ''} } from './Flag${namePascal}';`;
+
+buildJsFlags({
+  name: 'flags-vue',
+  componentTemplate,
+  indexItemTemplate,
+  indexFile: 'flags.ts',
+  pascalCase: false,
+  extension: 'ts',
+});
+
+buildFlagsList('flags-vue');
+buildFlagsMap('flags-vue');

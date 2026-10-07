@@ -1,32 +1,21 @@
-import { globSync } from 'glob';
-import { basename } from 'path';
-import { readFileSync, mkdirSync } from 'fs';
-import { parseFlag, flagTypes, asyncForEach } from '../../.build/helpers.mjs';
+#!/usr/bin/env node
+
+import { mkdirSync } from 'fs';
 import sharp from 'sharp';
+import { flagTypes, getAllFlags, parseFlag, asyncForEach } from '../../.build/helpers.mjs';
 
-const flags = globSync('../../flags/*.svg');
+const flags = getAllFlags();
+const sizes = [12, 16, 24, 32, 48, 64, 128];
 
-const sizes = [12, 16, 24, 32, 48, 64, 128]
+await asyncForEach(Object.entries(flagTypes), async ([variant, options]) => {
+  await asyncForEach(sizes, async (size) => {
+    mkdirSync(`./dist/${variant}/${size}`, { recursive: true });
+    console.log(`Processing ${variant} flags with size ${size}...`);
 
-await asyncForEach(Object.entries(flagTypes), async ([key, options]) => {
-   console.log(key, options)
-
-   mkdirSync(`./dist/${key}`, { recursive: true });
-
-   await asyncForEach(sizes, async size => {
-      mkdirSync(`./dist/${key}/${size}`, { recursive: true });
-
-      console.log(`Processing ${key} flags with size ${size}...`)
-
-      await asyncForEach(flags, async flag => {
-         let flagContent = readFileSync(flag, 'utf8'),
-            name = basename(flag, '.svg');
-
-         flagContent = parseFlag(flagContent, name, options, size)
-
-         await sharp(Buffer.from(flagContent))
-            .png()
-            .toFile(`./dist/${key}/${size}/${name}.png`)
-      })
-   })
-})
+    await asyncForEach(flags, async ({ slug, content }) => {
+      await sharp(Buffer.from(parseFlag(content, slug, options, size)))
+        .png()
+        .toFile(`./dist/${variant}/${size}/${slug}.png`);
+    });
+  });
+});

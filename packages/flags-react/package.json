@@ -1,50 +1,67 @@
 {
   "name": "@tabler/flags-react",
   "version": "0.0.3",
+  "license": "MIT",
+  "description": "Country flags as React components.",
+  "homepage": "https://github.com/tabler/tabler-flags",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-flags/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabler/tabler-flags.git",
+    "directory": "packages/flags-react"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "type": "module",
-  "main": "./dist/cjs/index.cjs",
-  "types": "./dist/cjs/index.d.cts",
-  "module": "./dist/esm/index.js",
+  "main": "./dist/cjs/tabler-flags-react.cjs",
+  "module": "./dist/esm/tabler-flags-react.mjs",
+  "types": "./dist/tabler-flags-react.d.ts",
   "exports": {
     ".": {
-      "require": {
-        "types": "./dist/cjs/index.d.cts",
-        "default": "./dist/cjs/index.cjs"
-      },
-      "import": {
-        "types": "./dist/esm/index.d.ts",
-        "default": "./dist/esm/index.js"
-      }
-    }
+      "types": "./dist/tabler-flags-react.d.ts",
+      "import": "./dist/esm/tabler-flags-react.mjs",
+      "require": "./dist/cjs/tabler-flags-react.cjs"
+    },
+    "./package.json": "./package.json"
   },
+  "amdName": "TablerFlagsReact",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "flags",
+    "country",
+    "svg",
+    "react",
+    "icons"
+  ],
   "scripts": {
-    "build": "pnpm run clean && pnpm run copy && node ./build.mjs && pnpm run build:tsup",
-    "build:tsup": "concurrently \"npm run build:cjs\" \"npm run build:esm\"",
-    "build:cjs": "tsup --format cjs --external react",
-    "build:esm": "tsup --format esm --external react",
-    "copy": "pnpm run copy:license",
+    "build": "pnpm run clean && pnpm run copy:license && pnpm run build:flags && pnpm run typecheck && pnpm run build:bundles",
+    "build:flags": "node build.mjs",
+    "build:bundles": "rollup -c ./rollup.config.mjs",
     "copy:license": "cp ../../LICENSE ./LICENSE",
-    "clean": "find . ! -name '.gitkeep' -path './dist/*' -exec rm -rf {} + && rm -rf ./src/flags/*",
-    "test": "vitest run --typecheck"
+    "clean": "rm -rf dist && find . ! -name '.gitkeep' -path '*/src/flags/*' -exec rm -rf {} +",
+    "test": "vitest run --typecheck",
+    "typecheck": "tsc"
   },
+  "dependencies": {},
   "peerDependencies": {
-    "react": "16 || 17 || 18 || 19"
+    "react": ">= 16"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "jest-serializer-html": "^7.1.0",
+    "jsdom": "^30.1.2",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "vitest": "^5.0.3"
   }
 }
