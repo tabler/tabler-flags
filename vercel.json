@@ -3,8 +3,5 @@
   "framework": null,
   "installCommand": "pnpm install --frozen-lockfile",
   "buildCommand": "pnpm run build:preview",
-  "outputDirectory": "preview/dist",
-  "github": {
-    "silent": true
-  }
+  "outputDirectory": "preview/dist"
 }
