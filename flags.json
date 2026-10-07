@@ -1406,5 +1406,41 @@
   "cabinda": {
     "name": "Cabinda",
     "category": "Territories"
+  },
+  "bouvet-island": {
+    "name": "Bouvet Island",
+    "category": "Territories",
+    "iso": "BV",
+    "alias": "norway"
+  },
+  "caribbean-netherlands": {
+    "name": "Caribbean Netherlands",
+    "category": "Territories",
+    "iso": "BQ",
+    "alias": "netherlands"
+  },
+  "saint-helena-ascension-and-tristan-da-cunha": {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "category": "Territories",
+    "iso": "SH",
+    "alias": "saint-helena"
+  },
+  "saint-martin": {
+    "name": "Saint Martin",
+    "category": "Territories",
+    "iso": "MF",
+    "alias": "france"
+  },
+  "svalbard-and-jan-mayen": {
+    "name": "Svalbard and Jan Mayen",
+    "category": "Territories",
+    "iso": "SJ",
+    "alias": "norway"
+  },
+  "united-states-minor-outlying-islands": {
+    "name": "United States Minor Outlying Islands",
+    "category": "Territories",
+    "iso": "UM",
+    "alias": "united-states"
   }
 }
