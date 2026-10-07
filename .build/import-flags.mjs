@@ -88,7 +88,7 @@ flags.forEach(flag => {
 // Write flags.json
 Object
    .keys(flagsData)
-   .filter(flag => !names.includes(flag))
+   .filter(flag => !names.includes(flag) && !flagsData[flag].alias)
    .forEach(key => {
       delete flagsData[key]
    })

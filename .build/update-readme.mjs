@@ -26,7 +26,7 @@ if (TABLE_MARKER.test(readme)) {
     .map((category) => {
       const rows = flags
         .filter((f) => f.category === category)
-        .map((f) => `| ${f.name} | \`${f.slug}\` | ${f.iso ? `\`${f.iso}\`` : ''} | \`Flag${f.namePascal}\`${f.isoPascal ? `, \`Flag${f.isoPascal}\`` : ''} |`)
+        .map((f) => `| ${f.name}${f.alias ? ` (alias of \`${f.alias}\`)` : ''} | \`${f.slug}\` | ${f.iso ? `\`${f.iso}\`` : ''} | \`Flag${f.namePascal}\`${f.isoPascal ? `, \`Flag${f.isoPascal}\`` : ''} |`)
         .join('\n');
       return `### ${category}\n\n| Name | Slug | ISO | Component |\n| --- | --- | --- | --- |\n${rows}`;
     })

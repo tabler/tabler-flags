@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A set of <!--flags-count-->292<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
+A set of <!--flags-count-->299<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
 </p>
 
 <p align="center">
@@ -367,6 +367,13 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Chechnya | `chechnya` |  | `FlagChechnya` |
 | Sealand | `sealand` |  | `FlagSealand` |
 | Cabinda | `cabinda` |  | `FlagCabinda` |
+| Bouvet Island (alias of `norway`) | `bouvet-island` | `BV` | `FlagBouvetIsland`, `FlagBV` |
+| Caribbean Netherlands (alias of `netherlands`) | `caribbean-netherlands` | `BQ` | `FlagCaribbeanNetherlands`, `FlagBQ` |
+| Saint Helena, Ascension and Tristan da Cunha (alias of `saint-helena`) | `saint-helena-ascension-and-tristan-da-cunha` | `SH` | `FlagSaintHelenaAscensionAndTristanDaCunha`, `FlagSH` |
+| Saint Martin (alias of `france`) | `saint-martin` | `MF` | `FlagSaintMartin`, `FlagMF` |
+| Svalbard and Jan Mayen (alias of `norway`) | `svalbard-and-jan-mayen` | `SJ` | `FlagSvalbardAndJanMayen`, `FlagSJ` |
+| United States Minor Outlying Islands (alias of `united-states`) | `united-states-minor-outlying-islands` | `UM` | `FlagUnitedStatesMinorOutlyingIslands`, `FlagUM` |
+| British Indian Ocean Territory (alias of `diego-garcia`) | `british-indian-ocean-territory` | `IO` | `FlagBritishIndianOceanTerritory`, `FlagIO` |
 | Basque Country | `basque-country` | `ES-PV` | `FlagBasqueCountry`, `FlagESPV` |
 | Galicia | `galicia` | `ES-GA` | `FlagGalicia`, `FlagESGA` |
 | Northern Ireland | `northern-ireland` | `GB-NIR` | `FlagNorthernIreland`, `FlagGBNIR` |
