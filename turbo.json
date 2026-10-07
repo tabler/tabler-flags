@@ -1,11 +1,23 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "agentGuidance": false,
+  "tasks": {
     "build": {
-      "inputs": ["../../flags/**", "build.mjs"],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**", "src/flags/**", "src/flags-list.ts"],
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "../../src/**", "../../flags.json", "../../.build/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
+      "cache": false
     },
     "test": {
+      "dependsOn": ["build", "^build"]
+    },
+    "typecheck": {
       "dependsOn": ["build", "^build"]
     }
   }

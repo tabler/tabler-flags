@@ -1,0 +1,63 @@
+{
+  "name": "@tabler/flags-preact",
+  "version": "0.0.3",
+  "license": "MIT",
+  "description": "Country flags as Preact components.",
+  "homepage": "https://github.com/tabler/tabler-flags",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-flags/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabler/tabler-flags.git",
+    "directory": "packages/flags-preact"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/cjs/tabler-flags-preact.cjs",
+  "module": "./dist/esm/tabler-flags-preact.mjs",
+  "types": "./dist/tabler-flags-preact.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/tabler-flags-preact.d.ts",
+      "import": "./dist/esm/tabler-flags-preact.mjs",
+      "require": "./dist/cjs/tabler-flags-preact.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "amdName": "TablerFlagsPreact",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "flags",
+    "country",
+    "svg",
+    "preact",
+    "icons"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run copy:license && pnpm run build:flags && pnpm run typecheck && pnpm run build:bundles",
+    "build:flags": "node build.mjs",
+    "build:bundles": "rollup -c ./rollup.config.mjs",
+    "copy:license": "cp ../../LICENSE ./LICENSE",
+    "clean": "rm -rf dist && find . ! -name '.gitkeep' -path '*/src/flags/*' -exec rm -rf {} +",
+    "test": "vitest run --typecheck",
+    "typecheck": "tsc"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "preact": "^10.5.13"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/preact": "^3.2.4",
+    "jest-serializer-html": "^7.1.0",
+    "jsdom": "^30.1.2",
+    "preact": "^10.28.0",
+    "vitest": "^5.0.3"
+  }
+}

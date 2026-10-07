@@ -1,7 +1,17 @@
 {
-   "extends": "../../tsconfig.json",
-   "compilerOptions": {
-     "jsx": "preserve",
-     "jsxImportSource": "vue"
-   },
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["src"]
 }

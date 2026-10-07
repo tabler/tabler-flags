@@ -1,23 +1,18 @@
-import { globSync } from 'glob';
-import { basename } from 'path';
-import { readFileSync, mkdirSync, writeFileSync } from 'fs';
-import { parseFlag, flagTypes } from '../../.build/helpers.mjs';
+#!/usr/bin/env node
 
-const flags = globSync('../../flags/*.svg');
+import { mkdirSync, writeFileSync, copyFileSync } from 'fs';
+import { resolve } from 'path';
+import { HOME_DIR, flagTypes, getAllFlags, parseFlag } from '../../.build/helpers.mjs';
 
-Object.entries(flagTypes).forEach(([key, options]) => {
-   mkdirSync(`./dist/${key}`, { recursive: true });
-   console.log(`Processing ${key} flags...`)
+const flags = getAllFlags();
 
-   flags.forEach(flag => {
-      let flagContent = readFileSync(flag, 'utf8'),
-         name = basename(flag, '.svg');
+Object.entries(flagTypes).forEach(([variant, options]) => {
+  mkdirSync(`./dist/${variant}`, { recursive: true });
+  console.log(`Processing ${variant} flags...`);
 
-      flagContent = parseFlag(flagContent, name, {
-         ...options,
-         removeSize: true
-      })
+  flags.forEach(({ slug, content }) => {
+    writeFileSync(`./dist/${variant}/${slug}.svg`, parseFlag(content, slug, { ...options, removeSize: true }), 'utf8');
+  });
+});
 
-      writeFileSync(`./dist/${key}/${name}.svg`, flagContent, 'utf8')
-   })
-})
+copyFileSync(resolve(HOME_DIR, 'flags.json'), './dist/flags.json');

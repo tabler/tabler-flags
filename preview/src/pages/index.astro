@@ -1,0 +1,88 @@
+---
+import path from 'node:path';
+import '@tabler/core/dist/css/tabler.css';
+import { getAllFlags, variants } from '../../../.build/helpers.mjs';
+
+// `import.meta.url` cannot be used here: during `astro build` the frontmatter
+// is bundled into a chunk under dist/.prerender/. Both `astro dev` and
+// `astro build` run with `preview/` as the working directory.
+const flags = getAllFlags({ withVariants: true, homeDir: path.resolve(process.cwd(), '..') });
+const categories = [...new Set(flags.map((f) => f.category))];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>tabler-flags — preview</title>
+    <style>
+      .flag-cell :global(svg) {
+        height: 1.5rem;
+        width: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="page-wrapper">
+        <div class="page-header d-print-none mt-4">
+          <div class="container-xl">
+            <h2 class="page-title">Flags</h2>
+            <div class="text-secondary mt-1">{flags.length} flags · {variants.length} variants ({variants.join(', ')})</div>
+          </div>
+        </div>
+
+        <div class="page-body">
+          <div class="container-xl">
+            <div class="row row-cards">
+              {
+                categories.map((category) => {
+                  const rows = flags.filter((f) => f.category === category);
+                  return (
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h3 class="card-title">{category}</h3>
+                          <div class="card-actions">
+                            <span class="badge bg-blue-lt">{rows.length}</span>
+                          </div>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-vcenter card-table">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Slug</th>
+                                <th>ISO</th>
+                                {variants.map((v) => <th>{v}</th>)}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {rows.map((f) => (
+                                <tr>
+                                  <td>{f.name}</td>
+                                  <td>
+                                    <code>{f.slug}</code>
+                                  </td>
+                                  <td>{f.iso ? <code>{f.iso}</code> : <span class="text-secondary">—</span>}</td>
+                                  {variants.map((v) => (
+                                    <td class="flag-cell" set:html={f.variants[v].content} />
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

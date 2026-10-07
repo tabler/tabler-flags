@@ -1,0 +1,21 @@
+{
+  "name": "preview",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Local visual QA page listing every flag in every variant, independent of the framework packages.",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@tabler/core": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "astro": "^7.3.6"
+  }
+}
