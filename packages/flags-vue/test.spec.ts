@@ -39,7 +39,7 @@ describe('Vue Flag component', () => {
       props: { style: { color: 'red' } },
     });
 
-    expect(container.firstChild).toHaveStyle('color: red');
+    expect(container.firstChild).toHaveStyle('color: rgb(255, 0, 0)');
   });
 
   it('should have proper type', () => {
@@ -55,6 +55,6 @@ describe('Vue Flag component', () => {
         style: { outline: '1px solid red' },
       },
     });
-    expect(container.innerHTML).toMatchInlineSnapshot(`"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" height="100" width="125" size="100" class="tabler-flag tabler-flag-poland test-class" style="outline: 1px solid red;"><defs><clipPath idflag-poland="-clip"><rect width="30" height="24" fill="#fff" rx="4"></rect></clipPath></defs><g clip-path="url(#flag-poland-clip)"><path fill="#fff" d="M30 24H0V0h30z"></path><path fill="#cb2e40" d="M30 24H0V12h30z"></path></g><rect width="29" height="23" x=".5" y=".5" fill="none" opacity=".15" stroke="#000" stroke-width="1" rx="3.5"></rect><path fill="#fff" d="M4 1a3 3 0 0 0-3 3v1a3 3 0 0 1 3-3h22a3 3 0 0 1 3 3v-1a3 3 0 0 0-3-3Z" opacity=".1"></path></svg>"`);
+    expect(container.innerHTML).toMatchInlineSnapshot(`"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" height="100" width="125" size="100" class="tabler-flag tabler-flag-poland test-class" style="outline: 1px solid red;"><defs><clipPath id="flag-poland-clip"><rect width="30" height="24" fill="#fff" rx="4"></rect></clipPath></defs><g clip-path="url(#flag-poland-clip)"><path fill="#fff" d="M30 24H0V0h30z"></path><path fill="#cb2e40" d="M30 24H0V12h30z"></path></g><rect width="29" height="23" x=".5" y=".5" fill="none" opacity=".15" stroke="#000" stroke-width="1" rx="3.5"></rect><path fill="#fff" d="M4 1a3 3 0 0 0-3 3v1a3 3 0 0 1 3-3h22a3 3 0 0 1 3 3v-1a3 3 0 0 0-3-3Z" opacity=".1"></path></svg>"`);
   });
 });

@@ -7,5 +7,6 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './setupVitest.js',
+    snapshotSerializers: ['jest-serializer-html'],
   },
 });
