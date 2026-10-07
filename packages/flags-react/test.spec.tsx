@@ -1,7 +1,7 @@
 import { createRef } from 'react';
 import { describe, it, expect, afterEach } from 'vitest';
 import { render, cleanup } from '@testing-library/react';
-import { FlagPoland, FlagPL, FlagEuropeanUnion, Flag, flagsList, variants } from './src/tabler-flags-react';
+import { FlagPoland, FlagPL, FlagEuropeanUnion, FlagSvalbardAndJanMayen, FlagSJ, FlagNorway, Flag, flagsList, variants } from './src/tabler-flags-react';
 
 describe('flags-react', () => {
   afterEach(() => {
@@ -82,6 +82,15 @@ describe('flags-react', () => {
     const { container } = render(<Flag name="european-union" />);
     expect(container.querySelector('svg')?.getAttribute('class')).toContain('tabler-flag-european-union');
     expect(FlagEuropeanUnion).toBeTruthy();
+  });
+
+  it('renders an alias flag with the target artwork but its own class and ISO code', () => {
+    expect(FlagSJ).toBe(FlagSvalbardAndJanMayen);
+    const alias = render(<FlagSvalbardAndJanMayen variant="plain" />);
+    const target = render(<FlagNorway variant="plain" />);
+    expect(alias.container.querySelector('svg')?.getAttribute('class')).toContain('tabler-flag-svalbard-and-jan-mayen');
+    expect(alias.container.querySelector('svg')?.innerHTML).toBe(target.container.querySelector('svg')?.innerHTML);
+    expect(render(<Flag name="sj" />).container.querySelector('svg')).toBeTruthy();
   });
 
   it('renders nothing for an unknown name', () => {

@@ -192,6 +192,10 @@ export const svgToNodes = (svg, { pascalCase = false } = {}) =>
  * Entries without an SVG are skipped with a warning; SVGs missing from
  * flags.json are reported as stray.
  *
+ * An entry with `alias: "<slug>"` has no SVG of its own and reuses the target's
+ * artwork (e.g. Svalbard flies the Norwegian flag). It still gets its own
+ * component, ISO code and output files so every ISO 3166-1 code resolves.
+ *
  * `homeDir` overrides the repo root for callers whose bundle moves this file
  * (the Astro preview resolves it from `process.cwd()`).
  *
@@ -205,8 +209,15 @@ export const getAllFlags = ({ withVariants = false, withNodes = false, pascalCas
   const flags = [];
   const missing = [];
 
-  Object.entries(canonical).forEach(([slug, { name, category, iso }]) => {
-    const svgPath = resolve(srcDir, `${slug}.svg`);
+  Object.entries(canonical).forEach(([slug, { name, category, iso, alias }]) => {
+    if (alias && !canonical[alias]) {
+      throw new Error(`[tabler-flags] "${slug}" is an alias of unknown flag "${alias}"`);
+    }
+    if (alias && canonical[alias].alias) {
+      throw new Error(`[tabler-flags] "${slug}" is an alias of "${alias}", which is itself an alias`);
+    }
+
+    const svgPath = resolve(srcDir, `${alias ?? slug}.svg`);
 
     if (!existsSync(svgPath)) {
       missing.push(slug);
@@ -220,6 +231,7 @@ export const getAllFlags = ({ withVariants = false, withNodes = false, pascalCas
       name,
       category,
       iso: iso ?? null,
+      alias: alias ?? null,
       namePascal: toPascalCase(slug),
       isoPascal: iso ? toPascalCase(iso) : null,
       content,

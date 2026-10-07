@@ -1407,26 +1407,47 @@
     "name": "Cabinda",
     "category": "Territories"
   },
-  "red-cross": {
-    "name": "Red Cross",
-    "category": "Other"
+  "bouvet-island": {
+    "name": "Bouvet Island",
+    "category": "Territories",
+    "iso": "BV",
+    "alias": "norway"
   },
-  "red-crescent": {
-    "name": "Red Crescent",
-    "category": "Other"
+  "caribbean-netherlands": {
+    "name": "Caribbean Netherlands",
+    "category": "Territories",
+    "iso": "BQ",
+    "alias": "netherlands"
   },
-  "nordic-council": {
-    "name": "Nordic Council",
-    "category": "Unions"
+  "saint-helena-ascension-and-tristan-da-cunha": {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "category": "Territories",
+    "iso": "SH",
+    "alias": "saint-helena"
   },
-  "mercosur": {
-    "name": "Mercosur",
-    "category": "Unions",
-    "iso": "MERCOSUR"
+  "saint-martin": {
+    "name": "Saint Martin",
+    "category": "Territories",
+    "iso": "MF",
+    "alias": "france"
   },
-  "kurdistan": {
-    "name": "Kurdistan",
-    "category": "Territories"
+  "svalbard-and-jan-mayen": {
+    "name": "Svalbard and Jan Mayen",
+    "category": "Territories",
+    "iso": "SJ",
+    "alias": "norway"
+  },
+  "united-states-minor-outlying-islands": {
+    "name": "United States Minor Outlying Islands",
+    "category": "Territories",
+    "iso": "UM",
+    "alias": "united-states"
+  },
+  "british-indian-ocean-territory": {
+    "name": "British Indian Ocean Territory",
+    "category": "Territories",
+    "iso": "IO",
+    "alias": "diego-garcia"
   },
   "basque-country": {
     "name": "Basque Country",
@@ -1451,5 +1472,26 @@
   "unknown": {
     "name": "Unknown",
     "category": "Other"
+  },
+  "red-cross": {
+    "name": "Red Cross",
+    "category": "Other"
+  },
+  "red-crescent": {
+    "name": "Red Crescent",
+    "category": "Other"
+  },
+  "nordic-council": {
+    "name": "Nordic Council",
+    "category": "Unions"
+  },
+  "mercosur": {
+    "name": "Mercosur",
+    "category": "Unions",
+    "iso": "MERCOSUR"
+  },
+  "kurdistan": {
+    "name": "Kurdistan",
+    "category": "Territories"
   }
 }
