@@ -292,6 +292,7 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | European Union | `european-union` | `EU` | `FlagEuropeanUnion`, `FlagEU` |
 | Nordic Council | `nordic-council` |  | `FlagNordicCouncil` |
 | Mercosur | `mercosur` | `MERCOSUR` | `FlagMercosur`, `FlagMERCOSUR` |
+| East African Community | `east-african-community` | `EAC` | `FlagEastAfricanCommunity`, `FlagEAC` |
 
 ### Territories
 
@@ -369,6 +370,9 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Sealand | `sealand` |  | `FlagSealand` |
 | Cabinda | `cabinda` |  | `FlagCabinda` |
 | Kurdistan | `kurdistan` |  | `FlagKurdistan` |
+| Basque Country | `basque-country` | `ES-PV` | `FlagBasqueCountry`, `FlagESPV` |
+| Galicia | `galicia` | `ES-GA` | `FlagGalicia`, `FlagESGA` |
+| Northern Ireland | `northern-ireland` | `GB-NIR` | `FlagNorthernIreland`, `FlagGBNIR` |
 
 ### Other
 
@@ -384,6 +388,7 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Rainbow | `rainbow` |  | `FlagRainbow` |
 | Red Cross | `red-cross` |  | `FlagRedCross` |
 | Red Crescent | `red-crescent` |  | `FlagRedCrescent` |
+| Unknown | `unknown` |  | `FlagUnknown` |
 <!--/flags-table-->
 
 ## 📝 License
