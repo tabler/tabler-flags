@@ -38,7 +38,7 @@ describe("React Flag component", () => {
   it('should add a style attribute to the element', () => {
     const { container } = render(<FlagPoland style={{ color: 'red' }} />);
 
-    expect(container.firstChild).toHaveStyle('color: red');
+    expect(container.firstChild).toHaveStyle('color: rgb(255, 0, 0)');
   })
 
   it('should have proper type', () => {

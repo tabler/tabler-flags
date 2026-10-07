@@ -1,10 +1,10 @@
 import { forwardRef, createElement, ReactNode } from 'react';
 
-import { FunctionComponent, ReactSVG } from 'react';
+import type { FunctionComponent, SVGElementType } from 'react';
 export type { ReactNode } from 'react';
 
 export type FlagNode = [
-  name: keyof ReactSVG,
+  name: SVGElementType,
   attributes: Record<string, string>,
   children: FlagNode,
 ][];
