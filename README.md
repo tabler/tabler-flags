@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A set of <!--flags-count-->287<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
+A set of <!--flags-count-->292<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
 </p>
 
 <p align="center">
@@ -290,6 +290,8 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Central European Free Trade Agreement | `cefta` |  | `FlagCefta` |
 | Pacific Community | `pacific-community` | `PC` | `FlagPacificCommunity`, `FlagPC` |
 | European Union | `european-union` | `EU` | `FlagEuropeanUnion`, `FlagEU` |
+| Nordic Council | `nordic-council` |  | `FlagNordicCouncil` |
+| Mercosur | `mercosur` | `MERCOSUR` | `FlagMercosur`, `FlagMERCOSUR` |
 
 ### Territories
 
@@ -366,6 +368,7 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Chechnya | `chechnya` |  | `FlagChechnya` |
 | Sealand | `sealand` |  | `FlagSealand` |
 | Cabinda | `cabinda` |  | `FlagCabinda` |
+| Kurdistan | `kurdistan` |  | `FlagKurdistan` |
 
 ### Other
 
@@ -379,6 +382,8 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Semaphore Signal | `semaphore-signal` |  | `FlagSemaphoreSignal` |
 | Maltese Cross | `maltese-cross` |  | `FlagMalteseCross` |
 | Rainbow | `rainbow` |  | `FlagRainbow` |
+| Red Cross | `red-cross` |  | `FlagRedCross` |
+| Red Crescent | `red-crescent` |  | `FlagRedCrescent` |
 <!--/flags-table-->
 
 ## 📝 License

@@ -1406,5 +1406,26 @@
   "cabinda": {
     "name": "Cabinda",
     "category": "Territories"
+  },
+  "red-cross": {
+    "name": "Red Cross",
+    "category": "Other"
+  },
+  "red-crescent": {
+    "name": "Red Crescent",
+    "category": "Other"
+  },
+  "nordic-council": {
+    "name": "Nordic Council",
+    "category": "Unions"
+  },
+  "mercosur": {
+    "name": "Mercosur",
+    "category": "Unions",
+    "iso": "MERCOSUR"
+  },
+  "kurdistan": {
+    "name": "Kurdistan",
+    "category": "Territories"
   }
 }
