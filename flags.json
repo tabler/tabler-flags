@@ -1442,5 +1442,11 @@
     "category": "Territories",
     "iso": "UM",
     "alias": "united-states"
+  },
+  "british-indian-ocean-territory": {
+    "name": "British Indian Ocean Territory",
+    "category": "Territories",
+    "iso": "IO",
+    "alias": "diego-garcia"
   }
 }

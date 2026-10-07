@@ -7,4 +7,4 @@
 "@tabler/flags-astro": minor
 ---
 
-Added `BQ`, `BV`, `MF`, `SH`, `SJ` and `UM` as aliases of the Netherlands, Norway, France, Saint Helena and United States flags, so every ISO 3166-1 code resolves.
+Added `BQ`, `BV`, `IO`, `MF`, `SH`, `SJ` and `UM` as aliases of the Netherlands, Norway, Diego Garcia, France, Saint Helena and United States flags, so every ISO 3166-1 code resolves.

@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A set of <!--flags-count-->293<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
+A set of <!--flags-count-->294<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
 </p>
 
 <p align="center">
@@ -372,6 +372,7 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Saint Martin (alias of `france`) | `saint-martin` | `MF` | `FlagSaintMartin`, `FlagMF` |
 | Svalbard and Jan Mayen (alias of `norway`) | `svalbard-and-jan-mayen` | `SJ` | `FlagSvalbardAndJanMayen`, `FlagSJ` |
 | United States Minor Outlying Islands (alias of `united-states`) | `united-states-minor-outlying-islands` | `UM` | `FlagUnitedStatesMinorOutlyingIslands`, `FlagUM` |
+| British Indian Ocean Territory (alias of `diego-garcia`) | `british-indian-ocean-territory` | `IO` | `FlagBritishIndianOceanTerritory`, `FlagIO` |
 
 ### Other
 
