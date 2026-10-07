@@ -7,4 +7,4 @@
 "@tabler/flags-astro": minor
 ---
 
-Added `BasqueCountry`, `Galicia`, `NorthernIreland`, `BritishIndianOceanTerritory`, `EastAfricanCommunity` and an `Unknown` placeholder flag.
+Added `BasqueCountry`, `Galicia`, `NorthernIreland`, `EastAfricanCommunity` and an `Unknown` placeholder flag.

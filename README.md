@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-A set of <!--flags-count-->293<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
+A set of <!--flags-count-->292<!--/flags-count--> free MIT-licensed high-quality country, territory and organisation flags, shipped as SVG and PNG assets and as components for React, Vue, Preact and Astro. Each flag comes in four variants: rounded, plain, gradient and shiny.
 </p>
 
 <p align="center">
@@ -370,7 +370,6 @@ pnpm import-flags   # import/*.svg -> src/*.svg, then validate
 | Basque Country | `basque-country` | `ES-PV` | `FlagBasqueCountry`, `FlagESPV` |
 | Galicia | `galicia` | `ES-GA` | `FlagGalicia`, `FlagESGA` |
 | Northern Ireland | `northern-ireland` | `GB-NIR` | `FlagNorthernIreland`, `FlagGBNIR` |
-| British Indian Ocean Territory | `british-indian-ocean-territory` | `IO` | `FlagBritishIndianOceanTerritory`, `FlagIO` |
 
 ### Other
 
