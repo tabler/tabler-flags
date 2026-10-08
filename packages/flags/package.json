@@ -1,6 +1,6 @@
 {
   "name": "@tabler/flags",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Country flags as SVG files in four variants (rounded, plain, gradient, shiny).",
   "homepage": "https://github.com/tabler/tabler-flags",
