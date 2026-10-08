@@ -75,6 +75,11 @@ flags.forEach(flag => {
          return `fill="#${fill.toLowerCase()}"`
       })
 
+   const rules = flagContent.match(/ (?:fill|clip)-rule="[^"]+"/g)
+   if (rules) {
+      console.warn(`Warning: ${name}.svg uses ${[...new Set(rules.map(r => r.trim()))].join(', ')} - check that it renders correctly`)
+   }
+
    // Write file if its different than the original
    const writePath = join(__dirname, `../src/${name}.svg`)
    if (!existsSync(writePath) || flagContent !== readFileSync(writePath, 'utf8')) {
