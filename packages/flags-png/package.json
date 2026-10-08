@@ -1,6 +1,6 @@
 {
   "name": "@tabler/flags-png",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "license": "MIT",
   "description": "Country flags as PNG files in four variants and seven sizes.",
   "homepage": "https://github.com/tabler/tabler-flags",
