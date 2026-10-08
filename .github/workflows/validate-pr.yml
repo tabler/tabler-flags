@@ -1,0 +1,61 @@
+name: Validate PR
+
+# Runs in the unprivileged `pull_request` context (read-only token, no secrets),
+# so it is safe to install and execute code from fork PRs here. The preview of
+# the changed flags is uploaded as an artifact and posted by the "Validate PR
+# Comment" workflow.
+on: [pull_request]
+
+permissions:
+  contents: read
+
+env:
+  NODE_VERSION: '24'
+
+jobs:
+  validate-pr:
+    if: github.repository == 'tabler/tabler-flags'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+
+      - name: Fetch base branch
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: git fetch origin "$BASE_REF"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate flags
+        run: pnpm run --silent validate
+
+      - name: Generate flags comment
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          BASE_REPO: ${{ github.event.pull_request.base.repo.full_name }}
+          PR_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+          PR_SHA: ${{ github.event.pull_request.head.sha }}
+        run: pnpm run --silent generate-flags-comment > ./comment-flags.md
+
+      - name: Upload flags comment
+        uses: actions/upload-artifact@v4
+        with:
+          name: validate-results
+          path: comment-flags.md
+          if-no-files-found: error
+          retention-days: 1

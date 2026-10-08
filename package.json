@@ -18,6 +18,7 @@
     "dev": "turbo run dev",
     "import-flags": "node ./.build/import-flags.mjs && pnpm run validate",
     "validate": "node ./.build/validate.mjs",
+    "generate-flags-comment": "node ./.build/generate-flags-comment.mjs",
     "update-readme": "node ./.build/update-readme.mjs",
     "clean": "turbo run clean",
     "test": "turbo run test",
