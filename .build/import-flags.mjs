@@ -71,7 +71,6 @@ flags.forEach(flag => {
       .replace(/^(<svg[^>]+>)<g(?: fill="none")?(?: fill-rule="[^"]+")?>(.*)<\/g>(<\/svg>)$/gm, `$1$2$3`)
       .replace(' xmlns:xlink="http://www.w3.org/1999/xlink"', '')
       .replace(/ fill="none"/g, '')
-      .replace(/ (?:fill|clip)-rule="[^"]+"/g, '')
       .replace(/fill="#([^"]+)"/g, (_, fill) => {
          return `fill="#${fill.toLowerCase()}"`
       })
