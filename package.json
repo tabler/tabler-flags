@@ -32,7 +32,7 @@
     "build:astro": "pnpm --filter @tabler/flags-astro build",
     "build:preview": "pnpm --filter preview build",
     "changeset": "changeset",
-    "version-packages": "changeset version",
+    "version-packages": "changeset version && node ./.build/release-version.mjs",
     "release": "pnpm run build && changeset publish"
   },
   "author": "Paweł Kuna (https://codecalm.net)",

@@ -3,7 +3,8 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "tabler/tabler-flags"
+      "repo": "tabler/tabler-flags",
+      "disableThanks": true
     }
   ],
   "commit": false,

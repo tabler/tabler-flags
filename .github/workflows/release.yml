@@ -76,6 +76,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Version packages
+        id: version
         uses: changesets/action/version@v2
         with:
           script: pnpm run version-packages
@@ -84,6 +85,27 @@ jobs:
         env:
           # changelog-github calls the GitHub API to link PRs and authors.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Changesets describes every package separately, while GitHub gets a single
+      # release for all of them. The description is replaced with a preview of
+      # that release, built from the changelogs on the release branch.
+      - name: Show the GitHub release in the release pull request
+        if: steps.version.outputs.pr-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.version.outputs.pr-number }}
+        run: |
+          git fetch origin changeset-release/main
+          git checkout --detach FETCH_HEAD
+          VERSION=$(node -p "require('./packages/flags/package.json').version")
+          {
+            echo "Merging this pull request publishes all \`@tabler/flags*\` packages in version **${VERSION}** to npm and creates the following GitHub release."
+            echo
+            echo "---"
+            echo
+            node ./.build/release-notes.mjs
+          } > body.md
+          gh pr edit "$PR_NUMBER" --body-file body.md
 
   pack:
     name: Pack packages
@@ -149,8 +171,28 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # All packages are released together in one version (see `fixed` in
+      # .changeset/config.json): one `v<version>` tag and one GitHub release
+      # below, instead of a tag and a release for every package.
       - name: Publish packages
         uses: changesets/action/publish@v2
         with:
           pack-dir-artifact-id: ${{ needs.pack.outputs.pack-dir-artifact-id }}
-          create-github-releases: true
+          create-github-releases: false
+          push-git-tags: false
+
+      # Created even when the publish step fails (for example when npm rejects a
+      # package that was already published in an earlier run), the packages that
+      # were published should not stay without the release.
+      - name: Create GitHub release
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=$(node -p "require('./packages/flags/package.json').version")
+          if gh release view "v${VERSION}" > /dev/null 2>&1; then
+            echo "Release v${VERSION} already exists"
+            exit 0
+          fi
+          node ./.build/release-notes.mjs > notes.md
+          gh release create "v${VERSION}" --target "$GITHUB_SHA" --title "Release ${VERSION}" --notes-file notes.md
