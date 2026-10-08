@@ -1,6 +1,6 @@
 {
   "name": "tabler-flags",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Country flag components for React, Vue, Preact and Astro, plus raw SVG and PNG assets.",
   "repository": {
     "type": "git",

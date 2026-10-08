@@ -1,4 +1,4 @@
-# @tabler/flags-react
+# @tabler/flags-preact
 
 ## 0.1.0
 
@@ -11,15 +11,3 @@
 - [#8](https://github.com/tabler/tabler-flags/pull/8) [`39402df`](https://github.com/tabler/tabler-flags/commit/39402df007649881d246652ee0c230bc617dd422) - Added `BasqueCountry`, `Galicia`, `NorthernIreland`, `EastAfricanCommunity` and an `Unknown` placeholder flag.
 
 - [#5](https://github.com/tabler/tabler-flags/pull/5) [`9900137`](https://github.com/tabler/tabler-flags/commit/9900137093082f4a9b0a826d419f9ce25f6e989e) - Added a `variant` prop (`rounded`, `plain`, `gradient`, `shiny`), a dynamic `Flag` component, `flagsList`, and new Preact and Astro packages.
-
-## 0.0.3
-
-### Patch Changes
-
-- 78bb2f5: test
-
-## 0.0.2
-
-### Patch Changes
-
-- dbe05b5: changesets init
