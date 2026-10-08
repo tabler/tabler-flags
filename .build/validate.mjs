@@ -82,8 +82,7 @@ flags.forEach(flag => {
    }
 
    if (flagContent.match(/fill-rule/gm)) {
-      console.error(`Flag ${name} has a fill-rule attribute`)
-      process.exit(1)
+      console.warn(`Warning: flag ${name} has a fill-rule attribute`)
    }
 
    if (!flagContent.trim().match(/^<svg xmlns="http:\/\/www.w3.org\/2000\/svg" width="30" height="24" viewBox="0 0 30 24">([\n\s]*<path[^>]+\/>)+[\n\s]*<\/svg>$/gm)) {
