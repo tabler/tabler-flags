@@ -1,6 +1,6 @@
 {
   "name": "@tabler/flags-vue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "Country flags as Vue 3 components.",
   "homepage": "https://github.com/tabler/tabler-flags",

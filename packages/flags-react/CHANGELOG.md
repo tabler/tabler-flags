@@ -1,5 +1,13 @@
 # @tabler/flags-react
 
+## 0.1.1
+
+### Patch Changes
+
+- [#13](https://github.com/tabler/tabler-flags/pull/13) [`9a846a4`](https://github.com/tabler/tabler-flags/commit/9a846a453c7759a20be657c67253e403a37416fd) - Updated `NorthernIreland`, `CommonwealthOfNations`, `Somaliland`, `ArabLeague` and `UN` flag SVGs with smaller path data.
+
+- [#11](https://github.com/tabler/tabler-flags/pull/11) [`4a3a270`](https://github.com/tabler/tabler-flags/commit/4a3a2705a9dff69e31ea67f015308173a26ad276) - Updated `Syria` flag to its current design and redrew the `TurkicStates` flag.
+
 ## 0.1.0
 
 ### Minor Changes
