@@ -88,15 +88,15 @@ jobs:
 
       # Changesets describes every package separately, while GitHub gets a single
       # release for all of them. The description is replaced with a preview of
-      # that release, built from the changelogs on the release branch.
+      # that release. The version action pushes the release branch through the
+      # GitHub API and leaves the versioned files in the working tree, the
+      # changelogs are read from there.
       - name: Show the GitHub release in the release pull request
         if: steps.version.outputs.pr-number != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ steps.version.outputs.pr-number }}
         run: |
-          git fetch origin changeset-release/main
-          git checkout --detach FETCH_HEAD
           VERSION=$(node -p "require('./packages/flags/package.json').version")
           {
             echo "Merging this pull request publishes all \`@tabler/flags*\` packages in version **${VERSION}** to npm and creates the following GitHub release."
