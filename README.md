@@ -29,7 +29,7 @@ Each framework package ships one tree-shakable component per flag (`FlagPoland`,
 
 | Package | Version | What | README |
 | --- | --- | --- | --- |
-| [`@tabler/flags`](packages/flags) | [![npm](https://img.shields.io/npm/v/@tabler/flags?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/flags) | SVG files, four variants | [README](packages/flags/README.md) |
+| [`@tabler/flags`](packages/flags) | [![npm](https://img.shields.io/npm/v/@tabler/flags?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/flags) | SVG files, four variants, CSS sprite | [README](packages/flags/README.md) |
 | [`@tabler/flags-png`](packages/flags-png) | [![npm](https://img.shields.io/npm/v/@tabler/flags-png?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/flags-png) | PNG files, four variants, seven sizes | [README](packages/flags-png/README.md) |
 | [`@tabler/flags-react`](packages/flags-react) | [![npm](https://img.shields.io/npm/v/@tabler/flags-react?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/flags-react) | React | [README](packages/flags-react/README.md) |
 | [`@tabler/flags-vue`](packages/flags-vue) | [![npm](https://img.shields.io/npm/v/@tabler/flags-vue?color=1864ab&label=%20)](https://www.npmjs.com/package/@tabler/flags-vue) | Vue 3 | [README](packages/flags-vue/README.md) |
@@ -46,6 +46,7 @@ tabler-flags/
     helpers.mjs          # getAllFlags(), parseFlag() (adds rounded/border/gradient
                          # decorations per variant), svgToNodes()
     build-flags.mjs      # shared generator every framework package's build.mjs calls
+    build-sprite.mjs     # src/*.svg -> one sprite SVG + CSS with background-position classes
     rollup-plugins.mjs   # shared Rollup config (esbuild, license banner, ...)
     import-flags.mjs     # import/*.svg -> src/*.svg via svgo
     validate.mjs         # structural checks on src/*.svg
