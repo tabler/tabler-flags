@@ -1,5 +1,11 @@
 # @tabler/flags
 
+## 0.2.0
+
+### Minor Changes
+
+- [#16](https://github.com/tabler/tabler-flags/pull/16) [`366ae33`](https://github.com/tabler/tabler-flags/commit/366ae33ff2f2d54a5fd8fe2402e11a6b51d17163) - Added a CSS sprite to `@tabler/flags` (`sprite/flags.svg` and `sprite/flags.css`) with a `.flag-<slug>` class per flag.
+
 ## 0.1.1
 
 ### Patch Changes
